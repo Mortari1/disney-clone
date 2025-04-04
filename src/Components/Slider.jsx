@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../Services/GlobalApi'
-import tailwindcssNoScrollbar from 'tailwindcss-no-scrollbar';
-import tailwindcss from '@tailwindcss/vite';
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
 
 function Slider() {
@@ -19,7 +17,7 @@ function Slider() {
   return (
     
     <div className='flex overflow-x-auto w-full px-16 py-4
-    scrollbar-none'>
+    '>
         
         {movieList.map((item)=>(
             <img src={IMAGE_BASE_URL+item.backdrop_path} 
