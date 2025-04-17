@@ -15,7 +15,9 @@ function App() {
      <div className=''>
 
         <Header/>
+        
         <Slider/>
+
         <ProductionHouse/>
      </div>
     </>
